@@ -13,27 +13,15 @@ ______________
 Project Description
 SakshamSevak is a mobile application designed to support elderly individuals by enhancing their independence, safety, and connection to family and caregivers. The app offers a range of features that address common challenges faced by seniors, including fall detection, medication reminders, interactive companionship, and secure storage for medical records. Built on Android with a robust backend, SakshamSevak is an intuitive and accessible health management solution for elderly users.
 
+## Screenshots
+
+<iframe src="https://drive.google.com/file/d/1IgUwWNh648olhvUgAA6Y8kW-xcAn8tL2/view" width="640" height="480" allow="autoplay"></iframe>
+
 ![sss1](https://github.com/user-attachments/assets/be23868e-7bf4-4bd0-a358-de0ad193f6ab)
 ![sss2](https://github.com/user-attachments/assets/2f44b1fc-6b4c-4da9-bb9c-9dce395edc7c)
 ![sss3](https://github.com/user-attachments/assets/5723cf00-94e8-4b30-a4fe-6811fb5ded72)
 ![sss4](https://github.com/user-attachments/assets/7bd66ae1-b71b-4cfa-9e5a-97dbc666954b)
 ![sss5](https://github.com/user-attachments/assets/1b2f11b8-a06b-472b-be71-5c0fbfedb18c)
-
-## Screenshots
-
-<table>
-  <tr table border="0">
-    <td><img src="https://drive.google.com/file/d/1IgUwWNh648olhvUgAA6Y8kW-xcAn8tL2/view" alt="App Screenshot" width="300" height="600"/></td>
-    <td><img src="https://github.com/user-attachments/assets/2f44b1fc-6b4c-4da9-bb9c-9dce395edc7c" alt="App Screenshot" width="300" height="600"/></td>
-    <td><img src="https://github.com/user-attachments/assets/5723cf00-94e8-4b30-a4fe-6811fb5ded72" alt="App Screenshot" width="300" height="600"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/be23868e-7bf4-4bd0-a358-de0ad193f6ab" alt="App Screenshot" width="300" height="600"/></td>
-    <td><img src="https://github.com/user-attachments/assets/7bd66ae1-b71b-4cfa-9e5a-97dbc666954b" alt="App Screenshot" width="300" height="600"/></td>
-    <td><img src="https://github.com/user-attachments/assets/1b2f11b8-a06b-472b-be71-5c0fbfedb18c" alt="App Screenshot" width="300" height="600"/></td>
-  </tr>
-</table>
-
 ______________
 Core Features of SakshamSevak
 1.	Fall Detection & Alerts: Uses gyroscope data to detect falls and alerts emergency contacts with the user’s location.
