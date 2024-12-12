@@ -35,12 +35,12 @@ API References
 Currently, the app uses custom models in place of public APIs for the pharmacy e-commerce feature. For future production versions, we plan to integrate APIs from major pharmacy providers such as Tata 1mg and Apollo (subject to subscription and permissions).
 ______________
 Demo Video
-Check out a video demo of SakshamSevak here: https://drive.google.com/file/d/1yZvuHJQx_PEx0bDCPwWPbFF4ZSR0qbtx/view?usp=sharing
+Check out a video demo of SakshamSevak here:= https://drive.google.com/file/d/1IgUwWNh648olhvUgAA6Y8kW-xcAn8tL2/view?usp=sharing
 ______________
 Installation and Setup
 Follow these steps to set up and run SakshamSevak locally:
 1.	Clone the Repository:
-git clone https://github.com/ganeshdecoded/Evolumin_Saksham_Sevak.git
+git clone https://github.com/ganeshdecoded/SOMAIYA_HACKATHON.git
 cd sakshamsevak
 2.	Open in Android Studio:
 o	Open Android Studio.
