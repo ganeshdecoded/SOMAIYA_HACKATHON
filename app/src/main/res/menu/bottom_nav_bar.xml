@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_medical"
+        android:icon="@drawable/baseline_medication_24"
+        android:title="Medical" />
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/baseline_file"
+        android:title="Records" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_workout"
+        android:icon="@drawable/baseline_sports_gymnastics_24"
+        android:title="Workout" />
+
+
+    <item
+        android:id="@+id/nav_insaurance"
+        android:icon="@drawable/baseline_shield_24"
+        android:title="Insauranec" />
+
+
+
+</menu>

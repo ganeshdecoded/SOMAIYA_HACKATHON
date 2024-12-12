@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.record_analysis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_error_logo"
+                android:layout_width="53dp"
+                android:layout_height="38dp"
+                android:src="@drawable/back_arrow_logo"
+                android:layout_marginLeft="15dp"
+               android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SakshamSevak"
+                android:textColor="@color/darkblue"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="380dp"
+            android:layout_height="203dp"
+            android:src="@drawable/add_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:id="@+id/record_analysis_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_analysis"/>
+
+    </LinearLayout>
+
+</FrameLayout>

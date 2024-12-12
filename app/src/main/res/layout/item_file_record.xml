@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:paddingStart="29dp"
+    android:paddingEnd="29dp">
+
+    <ImageView
+        android:id="@+id/file_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/record_item"
+        android:contentDescription="File Icon" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/darkBlue"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/file_upload_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="start" /> <!-- Date below file name -->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:src="@drawable/del" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicineReminder"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.Select_Language"
+            android:exported="false" />
+        <activity
+            android:name="com.example.CharacterPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ReportAnalysisActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.HostActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.home.Fall_detection"
+            android:exported="false" />
+
+        <service
+            android:name="com.example.home.FallDetectionService"
+            android:exported="false"
+            android:foregroundServiceType="location" /> <!-- Exported set to false; adjust based on your app's requirements -->
+        <activity
+            android:name="com.example.insuranceinfo.InsuranceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.records.Records_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Signupactivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Signinactivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity android:name=".MedicineStore" />
+        <activity android:name=".Cart" />
+        <activity android:name="com.example.a7minutesworkout.MainActivityWorkout" />
+        <activity android:name="com.example.a7minutesworkout.HistoryActivity" />
+        <activity android:name="com.example.a7minutesworkout.BMIActivity" />
+        <activity android:name="com.example.a7minutesworkout.WorkoutCompletionActivity" />
+        <activity android:name="com.example.a7minutesworkout.ExerciseActivity" />
+
+        <receiver
+            android:name=".MedicineReminderReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.medicinereminder.MEDICINE_REMINDER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.GoogleSignInOptions"
+            android:value="@string/default_web_client_id" />
+
+        <activity android:name="sszj.s.geminiapi.ui.GeminiChatBotActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/edit_medicine_reminder"
+            android:textColor="@color/darkBlue"
+            android:textSize="25sp"
+            android:fontFamily="@font/blackroboto"
+            android:gravity="center" />
+
+        <!-- Medicine Name EditText -->
+        <EditText
+            android:id="@+id/editTextMedicine"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/medicine_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColorHint="@color/darkvoilet"
+            android:textColor="@color/darkBlue"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <!-- Dosage EditText -->
+        <EditText
+            android:id="@+id/editTextDosage"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/dosage"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColorHint="@color/darkvoilet"
+            android:textColor="@color/darkBlue"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <!-- Time EditText Group -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/editTextHour"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/hour"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkvoilet"
+                android:textColor="@color/darkBlue"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkvoilet"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/editTextMinute"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/minute"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textAlignment="center"
+                android:textColorHint="@color/darkvoilet"
+                android:textColor="@color/darkBlue"/>
+
+        </LinearLayout>
+
+        <!-- Button Group -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSave"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:fontFamily="@font/blackroboto"
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:fontFamily="@font/blackroboto"
+                android:layout_marginStart="20dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

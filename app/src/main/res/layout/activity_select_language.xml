@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Select_Language">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:textSize="32dp"
+        android:fontFamily="@font/blackroboto"
+        android:textStyle="bold"
+        android:layout_marginTop="63dp"
+        android:layout_marginLeft="25dp"
+        android:text="Select Language">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/selectlang1"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang1"
+            android:layout_marginRight="19.9dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/selectlang2"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang2"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.8dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/selectlang3"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang3"
+            android:layout_marginRight="19.9dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/selectlang4"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang4"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.8dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/selectlang5"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang5"
+            android:layout_marginRight="19.9dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/selectlang6"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang6"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.8dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/selectlang7"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang7"
+            android:layout_marginRight="19.9dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/selectlang8"
+            android:layout_width="157.1dp"
+            android:layout_height="114.2dp"
+            android:src="@drawable/selectlang8"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selectlang_continue"
+            android:layout_width="380dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/pink"
+            android:textSize="12dp">
+        </Button>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

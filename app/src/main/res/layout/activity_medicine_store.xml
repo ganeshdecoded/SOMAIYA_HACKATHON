@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_button_logo"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:src="@drawable/back_arrow_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SakshamSevak"
+                android:textColor="@color/darkblue"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="horizontal">
+    <!-- Search Bar -->
+       <EditText
+           android:id="@+id/searchBar"
+           android:layout_width="320dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="16dp"
+           android:background="@drawable/rounded_edittext"
+           android:hint="Search"
+           android:textColorHint="@color/darkblue"
+           android:textColor="@color/darkBlue"
+           android:drawableLeft="@drawable/search_logo"
+           android:drawablePadding="8dp"
+           android:paddingStart="8dp"
+           android:inputType="text"
+           android:gravity="center_vertical"
+           android:theme="@style/CustomSearchViewStyle" />
+
+
+       <!--       <SearchView-->
+<!--           android:id="@+id/search_view"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="50dp"-->
+<!--           android:textStyle="bold"-->
+<!--           android:layout_marginTop="21dp"-->
+<!--           android:layout_marginLeft="16dp"-->
+<!--           android:textColorHint="@color/darkblue"-->
+<!--           android:textColor="@color/darkBlue"-->
+<!--           android:layout_marginRight="16dp"-->
+<!--           android:background="@drawable/rounded_edittext"-->
+<!--           android:iconifiedByDefault="false"-->
+<!--           android:queryHint="Search"-->
+<!--           android:theme="@style/CustomSearchViewStyle" />-->
+
+    <!-- Cart Layout with Badge -->
+    <FrameLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Cart Icon"
+            android:src="@drawable/shopingcart" />
+
+        <TextView
+            android:id="@+id/cartBadge"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:background="@drawable/badge_bg"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+   </LinearLayout>
+
+    <!-- Grid to display medicines -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>
+</LinearLayout>

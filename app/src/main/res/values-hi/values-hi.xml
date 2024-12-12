@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="x_coordinate">एक्स: %1$s</string>
+    <string name="y_coordinate">वाई: %1$s</string>
+    <string name="z_coordinate">जेड: %1$s</string>
+    <string name="app_name">मेडिसिन रिमाइंडर</string>
+    <string name="hint_email">ईमेल</string>
+    <string name="hint_password">पासवर्ड</string>
+
+    <!-- Button Text -->
+    <string name="button_text">बटन</string>
+
+    <!-- Other Text Elements -->
+    <string name="create_new_account">नया खाता बनाएं</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="hello_blank_fragment">नमस्ते रिक्त खंड</string>
+    <string name="channel_name">मेडिसिन रिमाइंडर चैनल</string>
+    <string name="channel_description">मेडिसिन रिमाइंडर के लिए चैनल</string>
+    <string name="reminder_settings">रिमाइंडर सेटिंग्स</string>
+    <string name="account_created">खाता बनाया गया</string>
+    <string name="please_check_your_gmail">कृपया अपने जीमेल की जांच करें ताकि आप अपने ईमेल को सत्यापित कर सकें</string>
+    <string name="ok">ठीक है</string>
+
+    <!-- For the second XML layout -->
+    <string name="total_amount">कुल: ₹0.00</string>
+    <string name="pay_now">अभी भुगतान करें</string>
+    <string name="workout_complete">वर्कआउट पूरा हुआ</string>
+    <string name="finish">खत्म करें</string>
+    <string name="are_you_ready">क्या आप तैयार हैं?</string>
+    <string name="are_you_excited_to_start_workout_feel_the_energy_inside_you_focus_on_your_today_s_goal_visualise_your_dream_body_and_lets_start">क्या आप वर्कआउट शुरू करने के लिए उत्साहित हैं? अपने भीतर की ऊर्जा महसूस करें, अपने आज के लक्ष्य पर ध्यान केंद्रित करें, अपने सपनों के शरीर की कल्पना करें और चलिए शुरू करते हैं।</string>
+    <string name="yes_i_am_ready">हाँ, मैं तैयार हूँ</string>
+    <string name="no_hold_on">नहीं, थोड़ा ठहरें</string>
+    <string name="are_you_sure">क्या आप निश्चित हैं?</string>
+    <string name="are_you_sure_you_want_to_quit_to_the_main_menu_the_progress_of_this_exercise_session_will_not_be_saved_if_you_continue">क्या आप निश्चित हैं कि आप मुख्य मेन्यू में वापस जाना चाहते हैं? इस व्यायाम सत्र की प्रगति सहेजी नहीं जाएगी यदि आप जारी रखते हैं।</string>
+    <string name="yes">हाँ</string>
+    <string name="medicine_name">दवा का नाम</string>
+    <string name="dosage">खुराक</string>
+    <string name="hour">घंटा</string>
+    <string name="minute">मिनट</string>
+    <string name="twoDot">:</string>
+    <string name="edit_medicine_reminder">दवा की याददाश्त संपादित करें</string>
+    <string name="medicine_reminder_small">मेडिसिन रिमाइंडर</string>
+
+    <!-- Buttons -->
+    <string name="medicine_reminder">दवा की याद</string>
+    <string name="reminder_settings_big">रिमाइंडर सेटिंग्स</string>
+    <string name="save">सहेजें</string>
+    <string name="select_image">छवि चुनें</string>
+    <string name="buy">खरीदें</string>
+
+    <!-- Input Hints -->
+    <string name="note">नोट</string>
+
+    <!-- Symbols -->
+
+
+    <!-- Chatbot UI -->
+    <string name="type_a_prompt">एक संदेश टाइप करें</string>
+
+    <!-- For the third XML layout -->
+    <string name="get_ready_for">तैयार हो जाओ</string>
+    <string name="next_step_exercise_name">अगला कदम व्यायाम का नाम</string>
+    <string name="exercise_image">व्यायाम छवि</string>
+    <string name="exercise_name">व्यायाम का नाम</string>
+    <string name="no_data_available">कोई डेटा उपलब्ध नहीं है</string>
+    <string name="total_exercises">इस सप्ताह में कुल व्यायाम: 0</string>
+    <string name="_home">मुख्य पृष्ठ</string>
+    <string name="_proposed">प्रस्तावित</string>
+    <string name="here_are_few_best_scientific_exercise">यहां कुछ बेहतरीन वैज्ञानिक व्यायाम हैं</string>
+    <string name="_start">शुरू करें</string>
+    <string name="_options">विकल्प</string>
+    <string name="choose_options_from_below_for_other_services">अन्य सेवाओं के लिए नीचे दिए गए विकल्प चुनें</string>
+    <string name="history">इतिहास</string>
+    <string name="bmi">बी.एम.आई</string>
+
+    <!-- SearchView -->
+    <string name="search_hint">फाइलें खोजें...</string>
+
+    <!-- Buttons -->
+    <string name="add_medical_record">चिकित्सा रिकॉर्ड जोड़ें</string>
+    <string name="button">बटन</string>
+    <string name="create_account">नया खाता बनाएँ</string>
+
+    <!-- Text Input Hints -->
+    <string name="username_hint">उपयोगकर्ता नाम</string>
+    <string name="email_hint">ईमेल</string>
+    <string name="password_hint">पासवर्ड</string>
+    <string name="age_hint">उम्र</string>
+    <string name="button_status">लंबित</string>
+    <string name="btn_add">कार्ट में जोड़ें</string>
+    <string name="btn_remove">कार्ट से निकालें</string>
+    <string name="yes_button">हाँ</string>
+    <string name="no_button">नहीं</string>
+
+    <!-- Text Views -->
+    <string name="tv_s_number">1</string>
+    <string name="tv_exercise_done">12 व्यायाम पूरे</string>
+    <string name="tv_date">तारीख</string>
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="delete_history">इतिहास हटाएँ</string>
+    <string name="delete_confirmation">क्या आप वाकई पक्का हैं?\nयह आपके कसरत इतिहास को स्थायी रूप से मिटा देगा।</string>
+
+    <!-- Medicine and Dosage Details -->
+    <string name="textView_time">07:00</string>
+    <string name="textView_medicine">पैरोल</string>
+    <string name="textView_dosage">2 खुराक</string>
+    <string name="gender_label">लिंग</string>
+
+    <!-- Spinner Items -->
+    <string-array name="gender_array">
+        <item>पुरुष</item>
+        <item>महिला</item>
+        <item>अन्य</item>
+    </string-array>
+
+</resources>

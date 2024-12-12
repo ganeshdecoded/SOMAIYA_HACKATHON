@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.Virtual_Character">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="32dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:textColor="@color/darkblue"
+       android:textStyle="bold"
+       android:fontFamily="@font/regularroboto"
+       android:text="Select a friend that you\nwant to be with?"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/character_recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="450dp"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal"
+       android:padding="8dp"
+       android:clipToPadding="false" />
+
+   <!-- Continue Button -->
+   <Button
+       android:id="@+id/continue_button"
+       android:layout_width="380dp"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="30dp"
+       android:text="Continue"
+       android:background="@drawable/rounded_edittext"
+       android:textSize="18sp"
+       android:paddingHorizontal="24dp"
+       android:paddingVertical="12dp"
+       android:backgroundTint="@color/pink"
+       android:textColor="@android:color/white" />
+
+
+
+</LinearLayout>

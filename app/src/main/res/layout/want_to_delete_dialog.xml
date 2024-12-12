@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Delete History"
+            android:textColor="@color/darkBlue"
+            android:textSize="25sp"
+            android:fontFamily="@font/blackroboto"
+            android:gravity="center" />
+
+        <!-- Content Text -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regularroboto"
+            android:text="Are you sure?\n This will permanently delete your workout histories."
+            android:textColor="@color/darkvoilet"
+            android:textSize="19sp"
+            android:gravity="center" />
+
+        <!-- Button Group -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Yes Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yes_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:gravity="center"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:fontFamily="@font/blackroboto" />
+
+            <!-- No Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/no_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:gravity="center"
+                android:text="No"
+                android:textColor="@color/white"
+                android:fontFamily="@font/blackroboto" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
