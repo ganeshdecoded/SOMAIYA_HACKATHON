@@ -9,6 +9,10 @@ o	Android Studio (Development IDE)
 o	SQLite 
 o	Git (Version control)
 o	Gyroscope sensor for fall detection
+
+______________
+Demo Video
+## Check out a video demo of SakshamSevak here:= https://drive.google.com/file/d/1IgUwWNh648olhvUgAA6Y8kW-xcAn8tL2/view?usp=sharing
 ______________
 ## Project Description
 SakshamSevak is a mobile application designed to support elderly individuals by enhancing their independence, safety, and connection to family and caregivers. The app offers a range of features that address common challenges faced by seniors, including fall detection, medication reminders, interactive companionship, and secure storage for medical records. Built on Android with a robust backend, SakshamSevak is an intuitive and accessible health management solution for elderly users.
@@ -34,9 +38,6 @@ ______________
 ______________
 API References
 Currently, the app uses custom models in place of public APIs for the pharmacy e-commerce feature. For future production versions, we plan to integrate APIs from major pharmacy providers such as Tata 1mg and Apollo (subject to subscription and permissions).
-______________
-Demo Video
-## Check out a video demo of SakshamSevak here:= https://drive.google.com/file/d/1IgUwWNh648olhvUgAA6Y8kW-xcAn8tL2/view?usp=sharing
 ______________
 Installation and Setup
 Follow these steps to set up and run SakshamSevak locally:
