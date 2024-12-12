@@ -12,6 +12,13 @@ o	Gyroscope sensor for fall detection
 ______________
 Project Description
 SakshamSevak is a mobile application designed to support elderly individuals by enhancing their independence, safety, and connection to family and caregivers. The app offers a range of features that address common challenges faced by seniors, including fall detection, medication reminders, interactive companionship, and secure storage for medical records. Built on Android with a robust backend, SakshamSevak is an intuitive and accessible health management solution for elderly users.
+
+![sss1](https://github.com/user-attachments/assets/be23868e-7bf4-4bd0-a358-de0ad193f6ab)
+![sss2](https://github.com/user-attachments/assets/2f44b1fc-6b4c-4da9-bb9c-9dce395edc7c)
+![sss3](https://github.com/user-attachments/assets/5723cf00-94e8-4b30-a4fe-6811fb5ded72)
+![sss4](https://github.com/user-attachments/assets/7bd66ae1-b71b-4cfa-9e5a-97dbc666954b)
+![sss5](https://github.com/user-attachments/assets/1b2f11b8-a06b-472b-be71-5c0fbfedb18c)
+
 ______________
 Core Features of SakshamSevak
 1.	Fall Detection & Alerts: Uses gyroscope data to detect falls and alerts emergency contacts with the user’s location.
@@ -28,12 +35,12 @@ API References
 Currently, the app uses custom models in place of public APIs for the pharmacy e-commerce feature. For future production versions, we plan to integrate APIs from major pharmacy providers such as Tata 1mg and Apollo (subject to subscription and permissions).
 ______________
 Demo Video
-Check out a video demo of SakshamSevak here: YouTube Link (Replace "demo-link" with the actual link once uploaded)
+Check out a video demo of SakshamSevak here: https://drive.google.com/file/d/1yZvuHJQx_PEx0bDCPwWPbFF4ZSR0qbtx/view?usp=sharing
 ______________
 Installation and Setup
 Follow these steps to set up and run SakshamSevak locally:
 1.	Clone the Repository:
-git clone https://github.com/yourusername/SOMAIYA_HACKATHON.git
+git clone https://github.com/ganeshdecoded/Evolumin_Saksham_Sevak.git
 cd sakshamsevak
 2.	Open in Android Studio:
 o	Open Android Studio.
