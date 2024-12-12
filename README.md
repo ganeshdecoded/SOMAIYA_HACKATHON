@@ -19,6 +19,26 @@ SakshamSevak is a mobile application designed to support elderly individuals by 
 ![sss4](https://github.com/user-attachments/assets/7bd66ae1-b71b-4cfa-9e5a-97dbc666954b)
 ![sss5](https://github.com/user-attachments/assets/1b2f11b8-a06b-472b-be71-5c0fbfedb18c)
 
+## Screenshots
+
+<table>
+  <tr table border="0">
+    <td><img src="https://github.com/user-attachments/assets/be23868e-7bf4-4bd0-a358-de0ad193f6ab" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/scrren2.jpg" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/screen3.jpg" alt="App Screenshot" width="300" height="600"/></td>
+  </tr>
+  <tr>
+    <td><img src="app/src/main/assets/screen4.jpg" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/screen5.jpg" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/screen6.jpg" alt="App Screenshot" width="300" height="600"/></td>
+  </tr>
+  <tr>
+    <td><img src="app/src/main/assets/screen7.jpg" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/screen8.jpg" alt="App Screenshot" width="300" height="600"/></td>
+    <td><img src="app/src/main/assets/screen9.jpg" alt="App Screenshot" width="300" height="600"/></td>
+  </tr>
+</table>
+
 ______________
 Core Features of SakshamSevak
 1.	Fall Detection & Alerts: Uses gyroscope data to detect falls and alerts emergency contacts with the user’s location.
