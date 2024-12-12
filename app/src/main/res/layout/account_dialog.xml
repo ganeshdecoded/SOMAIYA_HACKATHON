@@ -2,12 +2,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@color/white"
     android:elevation="10dp"
-    app:cardCornerRadius="26dp">
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="4dp"
             android:src="@drawable/logo" />
 
@@ -34,7 +35,7 @@
             android:text="Account Created"
             android:textColor="@color/darkBlue"
             android:fontFamily="@font/blackroboto"
-            android:textSize="23sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -46,7 +47,6 @@
             android:text="Please check your Gmail to verify your email"
             android:textAlignment="center"
             android:textColor="@color/darkvoilet"
-            android:fontFamily="@font/regularroboto"
             android:textSize="14sp"
             android:layout_gravity="center_horizontal" />
 

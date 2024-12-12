@@ -30,31 +30,18 @@ class ReminderSettingsFragment : Fragment() {
             requireActivity().onBackPressed()
         }
 
-        // Set up RecyclerView
+        //RecyclerView'i kurar
         binding.recyclerViewReminder.layoutManager = LinearLayoutManager(requireContext())
         medicineAdapter = MedicineAdapter(requireContext())
         binding.recyclerViewReminder.adapter = medicineAdapter
 
-        // Load medicines
         loadMedicines()
     }
 
-    // Load medicines from the database
+    //Database'den verileri çeker
     private fun loadMedicines() {
         val medicineDao = MedicineDatabase.getDatabase(requireContext()).medicineDao()
         val medicineList: List<Medicine> = medicineDao.getAllMedicines()
-
-        if (medicineList.isEmpty()) {
-            // Show the "No medicines found" message
-            binding.textViewNoMedicines.visibility = View.VISIBLE
-            binding.recyclerViewReminder.visibility = View.GONE
-        } else {
-            // Hide the "No medicines found" message and show the RecyclerView
-            binding.textViewNoMedicines.visibility = View.GONE
-            binding.recyclerViewReminder.visibility = View.VISIBLE
-        }
-
-        // Update the adapter with the medicine list
         medicineAdapter.submitMedicineList(medicineList)
     }
 }

@@ -7,32 +7,31 @@ object Constants {
     fun defaultExerciseList(): ArrayList<ExerciseModel>{
         val exerciseList = ArrayList<ExerciseModel>()
 
-
-        val jumpingJacks = ExerciseModel(1, "Cat Bend", R.drawable.ex1)
+        val jumpingJacks = ExerciseModel(1, "Jumping Jacks", R.drawable.ic_jumping_jacks)
         exerciseList.add(jumpingJacks)
 
-        val wallSit = ExerciseModel(2, "Standing forward bend chair", R.drawable.ex2)
+        val wallSit = ExerciseModel(2, "Wall Sit", R.drawable.ic_wall_sit)
         exerciseList.add(wallSit)
 
-        val pushUp = ExerciseModel(3, "Legs Up", R.drawable.ex3)
+        val pushUp = ExerciseModel(3, "Push Up", R.drawable.ic_push_up)
         exerciseList.add(pushUp)
 
-        val abdominalCrunch = ExerciseModel(4, "Seated forward Bend", R.drawable.ex4)
+        val abdominalCrunch = ExerciseModel(4, "Abdominal Crunch", R.drawable.ic_abdominal_crunch)
         exerciseList.add(abdominalCrunch)
 
-        val stepUpOnChair = ExerciseModel(5, "Raise the head", R.drawable.ex5)
+        val stepUpOnChair = ExerciseModel(5, "Step-Up onto Chair", R.drawable.ic_step_up_onto_chair)
         exerciseList.add(stepUpOnChair)
 
-        val squat = ExerciseModel(6, "Bridge Pose", R.drawable.ex6)
+        val squat = ExerciseModel(6, "Squat", R.drawable.ic_squat)
         exerciseList.add(squat)
 
-        val tricepsDipOnChair = ExerciseModel(7, "Knee Streching", R.drawable.ex7)
+        val tricepsDipOnChair = ExerciseModel(7, "Triceps Dip On Chair", R.drawable.ic_triceps_dip_on_chair)
         exerciseList.add(tricepsDipOnChair)
 
-        val plank = ExerciseModel(8, "Side lying leg rise", R.drawable.ex8)
+        val plank = ExerciseModel(8, "Plank", R.drawable.ic_plank)
         exerciseList.add(plank)
 
-        val highKneesRunningInPlace = ExerciseModel(9, "Hand forward squat", R.drawable.ex9)
+        val highKneesRunningInPlace = ExerciseModel(9, "High Knees Running In Place", R.drawable.ic_high_knees_running_in_place)
         exerciseList.add(highKneesRunningInPlace)
 
         val lunges = ExerciseModel(10, "Lunges", R.drawable.ic_lunge)

@@ -27,9 +27,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
@@ -42,12 +41,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineReminder"
         tools:targetApi="31">
-        <activity
-            android:name="com.example.Select_Language"
-            android:exported="false" />
-        <activity
-            android:name="com.example.CharacterPage"
-            android:exported="false" />
         <activity
             android:name="com.example.ReportAnalysisActivity"
             android:exported="false" />

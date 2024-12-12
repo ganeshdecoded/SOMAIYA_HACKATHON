@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/background"
     tools:context="com.example.a7minutesworkout.BMIActivity">
 
     <!-- Custom ToolBar -->
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
-        android:background="@color/white"
+        android:background="@color/background"
         app:titleTextColor="@color/white"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
 
         android:fontFamily="@font/nunito_sans_regular"
         android:text="@string/first_para"
-        android:textColor="@color/darkBlue"
+        android:textColor="@color/white"
         android:textSize="19sp"
 
         app:layout_constraintTop_toBottomOf="@+id/toolbarBMI"
@@ -47,7 +47,7 @@
 
         android:fontFamily="@font/nunito_sans_regular"
         android:text="@string/second_para"
-        android:textColor="@color/darkBlue"
+        android:textColor="@color/white"
         android:textSize="19sp"
 
         app:layout_constraintTop_toBottomOf="@+id/first_para"
@@ -82,9 +82,9 @@
             app:boxCornerRadiusTopStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
 
-            android:textColorHint="@color/darkBlue"
-            app:boxStrokeColor="@color/pink"
-            app:hintTextColor="@color/pink" >
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/light_tone"
+            app:hintTextColor="@color/light_tone" >
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etUnitWeight"
@@ -92,10 +92,10 @@
                 android:layout_height="wrap_content"
 
                 android:hint="WEIGHT (in kg)"
-                android:textColorHint="@color/darkBlue"
+                android:textColorHint="@color/white"
 
                 android:fontFamily="@font/nunito_sans_regular"
-                android:textColor="@color/darkBlue"
+                android:textColor="@color/white"
                 android:inputType="numberDecimal"
                 android:textSize="19sp" />
 
@@ -103,7 +103,6 @@
 
         <!-- Radio Buttons to change units -->
         <RadioGroup
-            android:visibility="gone"
             android:id="@+id/rgWeight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -180,9 +179,9 @@
             app:boxCornerRadiusTopStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
 
-            android:textColorHint="@color/darkBlue"
-            app:boxStrokeColor="#FF5895"
-            app:hintTextColor="#FF5895" >
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/light_tone"
+            app:hintTextColor="@color/light_tone" >
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etUnitHeightCm"
@@ -190,10 +189,10 @@
                 android:layout_height="wrap_content"
 
                 android:hint="HEIGHT (in cm)"
-                android:textColorHint="@color/darkBlue"
+                android:textColorHint="@color/white"
 
                 android:fontFamily="@font/nunito_sans_regular"
-                android:textColor="@color/darkBlue"
+                android:textColor="@color/white"
                 android:inputType="numberDecimal"
                 android:textSize="19sp" />
 
@@ -273,7 +272,6 @@
 
         <!-- Radio Buttons to change units -->
         <RadioGroup
-            android:visibility="gone"
             android:id="@+id/rgHeight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -327,7 +325,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/pink"
+        android:background="@drawable/btn_bg"
 
         android:fontFamily="@font/nunito_sans_regular"
         android:text="Calculate"
@@ -338,7 +336,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ll_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
     <View
         android:id="@+id/line"
@@ -365,7 +362,7 @@
 
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="BMI : "
-        android:textColor="@color/darkBlue"
+        android:textColor="@color/white"
         android:textSize="25sp"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -379,7 +376,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="3dp"
 
-        android:textStyle="bold"
         android:fontFamily="@font/nunito_sans_semibold"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/BMI_text_in_bold"

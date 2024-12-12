@@ -4,7 +4,6 @@ class ExerciseModel(
     private var id: Int,
     private var name: String,
     private var image: Int,
-//    private var videoResId: Int,
     private var isCompleted: Boolean = false,
     private var isSelected: Boolean = false
 ) {
@@ -28,14 +27,6 @@ class ExerciseModel(
     fun setImage(image: Int) {
         this.image = image
     }
-
-//    fun getVideoResId(): Int {  // Updated getter for video resource
-//        return videoResId
-//    }
-//
-//    fun setVideoResId(videoResId: Int) {  // Updated setter
-//        this.videoResId = videoResId
-//    }
 
     fun getIsCompleted(): Boolean {
         return isCompleted

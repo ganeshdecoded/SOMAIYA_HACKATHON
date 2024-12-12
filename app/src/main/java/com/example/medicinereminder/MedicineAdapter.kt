@@ -3,7 +3,6 @@ package com.example.medicinereminder
 import android.app.Activity
 import android.app.AlarmManager
 import android.app.AlertDialog
-import android.app.Dialog
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
@@ -183,36 +182,29 @@ class MedicineAdapter(private val context: Context) :
 
     // Düzenleme dialogunu gösterir
     private fun showEditDialog(medicine: Medicine) {
-        // Inflate the custom dialog layout
         val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_edit_medicine, null)
+        val alertDialogBuilder = AlertDialog.Builder(context, R.style.TransparentDialog)
+            .setView(dialogView)
+            .create()
 
-        // Create the Dialog and set the custom layout
-        val dialog = Dialog(context)
-        dialog.setContentView(dialogView)
-        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-        // Get references to the views in the custom layout
         val editTextMedicine = dialogView.findViewById<EditText>(R.id.editTextMedicine)
         val editTextDosage = dialogView.findViewById<EditText>(R.id.editTextDosage)
         val editTextHour = dialogView.findViewById<EditText>(R.id.editTextHour)
         val editTextMinute = dialogView.findViewById<EditText>(R.id.editTextMinute)
         val buttonSave = dialogView.findViewById<Button>(R.id.buttonSave)
-        val buttonCancel = dialogView.findViewById<Button>(R.id.buttonCancel)
 
-        // Populate the fields with the existing medicine data
         editTextMedicine.setText(medicine.name)
         editTextDosage.setText(medicine.dosage)
-        editTextHour.setText(medicine.timeToTake.split(":")[0])  // Hour part of time
-        editTextMinute.setText(medicine.timeToTake.split(":")[1])  // Minute part of time
+        editTextHour.focusable
 
-        // Set up button listeners
         buttonSave.setOnClickListener {
             val updatedName = editTextMedicine.text.toString()
             val updatedDosage = editTextDosage.text.toString()
             var updatedHour = editTextHour.text.toString()
             var updatedMinute = editTextMinute.text.toString()
 
-            // Validate inputs
+
+            // Gerekli alanların doldurulup doldurulmadığını kontrol eder
             if (updatedName.isBlank() || updatedDosage.isBlank() || updatedHour.isBlank() || updatedMinute.isBlank()) {
                 showToast("Please fill in all fields!")
                 return@setOnClickListener
@@ -223,67 +215,59 @@ class MedicineAdapter(private val context: Context) :
                 showToast("Please enter a valid minute (0-59)")
                 return@setOnClickListener
             } else {
-                // Format the time with leading zeros if needed
-                if (updatedHour.length == 1) updatedHour = "0$updatedHour"
-                if (updatedMinute.length == 1) updatedMinute = "0$updatedMinute"
+
+                // Saat ve dakika değerlerini kontrol eder ve 0 ekler
+                if (updatedHour.length==1 && updatedHour.toInt() in 0..9) {
+                    updatedHour = "0$updatedHour"
+                }
+
+                if (updatedMinute.length==1 && updatedMinute.toInt() in 0..9) {
+                    updatedMinute = "0$updatedMinute"
+                }
 
                 val updatedTime = "$updatedHour:$updatedMinute"
-
-                // Create an updated medicine object
+                // Create updated medicine object with the original image URI
                 val updatedMedicine = medicine.copy(
                     name = updatedName,
                     dosage = updatedDosage,
                     timeToTake = updatedTime
                 )
-
                 cancelAlarm(medicine)
                 updateMedicine(updatedMedicine)
                 scheduleMedicineReminder(context, updatedMedicine)
 
+
                 showToast("Medicine Reminder Updated!")
-                dialog.dismiss()
+                alertDialogBuilder.dismiss()
             }
         }
 
-        // Set up the cancel button to dismiss the dialog
-        buttonCancel.setOnClickListener {
-            dialog.dismiss()
-        }
-
-        // Show the dialog
-        dialog.show()
+        alertDialogBuilder.show()
     }
 
     // Medicine silme dialogunu gösterir
     private fun showDeleteDialog(medicine: Medicine) {
-        // Inflate the custom dialog layout
         val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_delete_medicine, null)
+        val alertDialogBuilder = AlertDialog.Builder(context, R.style.TransparentDialog)
+            .setView(dialogView)
+            .create()
 
-        // Create the Dialog and set the custom layout
-        val dialog = Dialog(context)
-        dialog.setContentView(dialogView)
-        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-        // Get references to the views in the custom layout
         val buttonDelete = dialogView.findViewById<Button>(R.id.buttonDelete)
         val buttonCancel = dialogView.findViewById<Button>(R.id.buttonCancel)
 
-        // Set up the button listeners
         buttonDelete.setOnClickListener {
             deleteMedicine(medicine)
             cancelAlarm(medicine)
-            showToast("Medicine Reminder Deleted!")
-            dialog.dismiss()
+            showToast("Medicine Reminder Updated!")
+            alertDialogBuilder.dismiss()
         }
 
         buttonCancel.setOnClickListener {
-            dialog.dismiss()
+            alertDialogBuilder.dismiss()
         }
 
-        // Show the dialog
-        dialog.show()
+        alertDialogBuilder.show()
     }
-
 
     // Medicine Reminder'i planlar
     private fun scheduleMedicineReminder(context: Context, medicine: Medicine) {

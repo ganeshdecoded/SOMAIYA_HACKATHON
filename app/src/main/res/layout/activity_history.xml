@@ -5,9 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:background="@color/white"
+    android:background="@color/background"
     tools:context="com.example.a7minutesworkout.HistoryActivity">
 
     <!-- Custom Toolbar -->
@@ -16,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
-        android:background="@color/white"
-        app:titleTextColor="@color/darkBlue"
+        android:background="@color/background"
+        app:titleTextColor="@color/white"
         app:layout_constraintTop_toTopOf="parent" >
 
         <!-- Delete All Button -->
@@ -25,7 +23,7 @@
             android:id="@+id/ibDeleteAll"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:visibility="gone"
+
             android:background="@drawable/delete_database"
             android:layout_gravity="end"
             android:layout_marginEnd="10dp"/>
@@ -85,7 +83,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/darkBlue"
         android:layout_marginBottom="30dp"
         android:text="Total Exercises in this week: 0"
         android:textSize="18sp"

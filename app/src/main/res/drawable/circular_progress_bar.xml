@@ -6,9 +6,9 @@
             android:shape="ring"
             android:thicknessRatio="20.0"
             android:useLevel="true">
-            <solid android:color="@color/pink"/>
-            <gradient android:startColor="@color/pink"
-                android:endColor="@color/pink"
+            <solid android:color="@color/light_tone"/>
+            <gradient android:startColor="@color/light_tone"
+                android:endColor="@color/dark_tone"
                 android:angle="90"/>
         </shape>
     </item>

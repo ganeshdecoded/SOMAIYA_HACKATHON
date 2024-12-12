@@ -38,7 +38,6 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 import android.telephony.SmsManager
 import android.widget.LinearLayout
-import androidx.appcompat.widget.AppCompatButton
 import com.example.insuranceinfo.InsuranceActivity
 import com.example.medicinereminder.HomeFragment
 import com.example.medicinereminder.ReminderSettingsFragment
@@ -183,33 +182,24 @@ class Fall_detection : AppCompatActivity(), SensorEventListener {
     }
 
     private fun showEmergencyContactDialog() {
-        val dialogView = layoutInflater.inflate(R.layout.emergency_contact_dialog, null)
-        val dialogBuilder = AlertDialog.Builder(this, R.style.TransparentDialog) // Use your custom theme if available
-            .setView(dialogView)
-            .setCancelable(false) // Optional, keeps the dialog from being canceled by tapping outside
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Emergency Contact")
+        builder.setMessage("Please enter your emergency contact number:")
 
-        val alertDialog = dialogBuilder.create()
+        val input = EditText(this)
+        builder.setView(input)
 
-        // Access the EditText and Buttons in the custom dialog
-        val editTextEmergencyContact = dialogView.findViewById<EditText>(R.id.editTextEmergencyContact)
-        val buttonSave = dialogView.findViewById<AppCompatButton>(R.id.buttonSave)
-        val buttonCancel = dialogView.findViewById<AppCompatButton>(R.id.buttonCancel)
-
-        buttonSave.setOnClickListener {
-            val number = editTextEmergencyContact.text.toString()
+        builder.setPositiveButton("OK") { dialog, _ ->
+            val number = input.text.toString()
             if (number.isNotEmpty()) {
-                saveEmergencyContactNumber(number) // Save contact number
-                alertDialog.dismiss()
+                saveEmergencyContactNumber(number)
             } else {
                 Toast.makeText(this, "Contact number cannot be empty", Toast.LENGTH_SHORT).show()
             }
+            dialog.dismiss()
         }
-
-        buttonCancel.setOnClickListener {
-            alertDialog.dismiss()
-        }
-
-        alertDialog.show()
+        builder.setNegativeButton("Cancel") { dialog, _ -> dialog.cancel() }
+        builder.show()
     }
 
     private fun saveEmergencyContactNumber(number: String) {

@@ -33,7 +33,7 @@ class ExerciseStatusAdapter(private val items: ArrayList<ExerciseModel>):
                     ContextCompat.getDrawable(holder.itemView.context,
                     R.drawable.item_circular_thin_ring_background)
                 holder.tvItem.setTextColor(ContextCompat.getColor(holder.itemView.context,
-                    R.color.darkvoilet))
+                    R.color.white))
             }
             model.getIsCompleted() -> {
                 holder.tvItem.background =
@@ -47,7 +47,7 @@ class ExerciseStatusAdapter(private val items: ArrayList<ExerciseModel>):
                     ContextCompat.getDrawable(holder.itemView.context,
                         R.drawable.item_circular_color_grey_background)
                 holder.tvItem.setTextColor(ContextCompat.getColor(holder.itemView.context,
-                    R.color.white))
+                    R.color.black))
             }
         }
 

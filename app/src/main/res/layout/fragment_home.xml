@@ -44,8 +44,8 @@
 
         <ImageView
             android:id="@+id/mainchatbotgo"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="60dp"
             android:src="@drawable/chatmaintext"
@@ -61,8 +61,8 @@
 
         <ImageView
             android:id="@+id/store"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="100dp"
             android:layout_marginEnd="30dp"
             android:src="@drawable/cart"
@@ -71,8 +71,8 @@
 
         <ImageView
             android:id="@+id/add_medicine"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="230dp"
             android:layout_marginEnd="30dp"
             android:src="@drawable/add"
@@ -81,8 +81,8 @@
 
         <ImageView
             android:id="@+id/list_medicine"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="166dp"
             android:src="@drawable/medicine"

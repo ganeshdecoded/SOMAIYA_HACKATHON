@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@color/white"
-    android:elevation="30dp"
-    app:cardCornerRadius="20dp">
+    android:elevation="10dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,9 +36,8 @@
             android:text="@string/are_you_excited_to_start_workout_feel_the_energy_inside_you_focus_on_your_today_s_goal_visualise_your_dream_body_and_lets_start"
             android:textColor="@color/darkvoilet"
             android:textStyle="normal"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:paddingStart="20dp"
-            android:fontFamily="@font/regularroboto"
             android:paddingEnd="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="15dp" />
@@ -50,7 +50,7 @@
             android:fontFamily="@font/blackroboto"
             android:text="@string/yes_i_am_ready"
             android:textColor="@color/white"
-            android:textSize="17sp"
+            android:textSize="15sp"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -62,7 +62,7 @@
             android:fontFamily="@font/blackroboto"
             android:text="@string/no_hold_on"
             android:textColor="@color/white"
-            android:textSize="17sp"
+            android:textSize="15sp"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>

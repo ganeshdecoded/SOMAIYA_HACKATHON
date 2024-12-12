@@ -1,6 +1,5 @@
 package com.example.medicinereminder
 
-import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -29,6 +28,7 @@ class Cart : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_cart)
 
+
         var age: Int = 0 // Variable to store age
 
         val currentUser = FirebaseAuth.getInstance().currentUser?.uid
@@ -46,9 +46,9 @@ class Cart : AppCompatActivity() {
                             val userAge = snapshot.child("userage").getValue(String::class.java)
                             if (userAge != null) {
                                 age = userAge.toIntOrNull() ?: 0 // Store age or default to 0
-//                                utils.showtoast(this@Cart, "Age fetched: $age")
+                                utils.showtoast(this@Cart, "Age fetched: $age")
                             } else {
-//                                utils.showtoast(this@Cart, "Age not found")
+                                utils.showtoast(this@Cart, "Age not found")
                             }
                         }
 
@@ -63,6 +63,9 @@ class Cart : AppCompatActivity() {
         } else {
             utils.showtoast(this@Cart, "User not logged in")
         }
+
+
+
 
         // Retrieve the total number of exercises from SharedPreferences
         val sharedPreferences = getSharedPreferences("ExercisePrefs", MODE_PRIVATE)
@@ -80,10 +83,11 @@ class Cart : AppCompatActivity() {
         findViewById<TextView>(R.id.total_amount).text = "Total: ₹$totalAmount"
 
         findViewById<Button>(R.id.pay_button).setOnClickListener {
-            if (NoofExercise == 0) {
+            if (NoofExercise == 0){
                 Toast.makeText(this, "Payment done", Toast.LENGTH_SHORT).show()
-            } else {
-                val discount = calculateDiscount(NoofExercise, age)
+            }
+            else{
+                val discount = calculateDiscount(NoofExercise,age)
                 val finalAmount = totalAmount - (totalAmount * discount)
                 showDiscountDialog(discount, finalAmount)
             }
@@ -124,31 +128,18 @@ class Cart : AppCompatActivity() {
         }
     }
 
+
+
     private fun showDiscountDialog(discount: Double, finalAmount: Double) {
         val discountPercentage = (discount * 100).toInt()
-
-        // Inflate your dialog layout
-        val dialogView = layoutInflater.inflate(R.layout.discount_dialog, null)
-
-        // Find the TextView in your dialog layout
-        val discountMessageTextView: TextView = dialogView.findViewById(R.id.discount_message)
-        discountMessageTextView.text = "Based on your exercise stats,\nyou have received ${discountPercentage}% discount on this \nbilling!"
-
-        // Create the dialog
-        val dialog = Dialog(this)
-        dialog.setContentView(dialogView)
-        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
-        // Set up the button to dismiss the dialog and update total amount
-        val okButton: Button = dialogView.findViewById(R.id.ok_button)
-        okButton.setOnClickListener {
-            // Update the total amount display after the user acknowledges the dialog
-            findViewById<TextView>(R.id.total_amount).text = "Total: ₹$finalAmount"
-            dialog.dismiss()
-        }
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("Congratulations!")
+            .setMessage("Based on your exercise stats, you have received a ${discountPercentage}% discount.")
+            .setPositiveButton("Ok") { _, _ ->
+                findViewById<TextView>(R.id.total_amount).text = "Total: ₹$finalAmount"
+            }
+            .create()
 
         dialog.show()
     }
-
-
 }

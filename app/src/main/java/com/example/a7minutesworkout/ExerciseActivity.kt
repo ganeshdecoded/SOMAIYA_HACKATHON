@@ -12,7 +12,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
-import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.medicinereminder.R
@@ -56,7 +55,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
-        //setSupportActionBar(binding?.toolbarExercise)
+        setSupportActionBar(binding?.toolbarExercise)
 
         if (supportActionBar != null)
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -66,9 +65,9 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         tts = TextToSpeech(this, this)
 
-//        binding?.toolbarExercise?.setNavigationOnClickListener {
-//            onBackPressed()
-//        }
+        binding?.toolbarExercise?.setNavigationOnClickListener {
+            onBackPressed()
+        }
 
         binding?.btnPrevious?.setOnClickListener {
             if (currentExercisePosition == 0) {
@@ -141,7 +140,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 setupExerciseView() // Set up the exercise view immediately
             }
 
-            setupRestView()
+            //setupRestView()
         }
 
 //        binding?.btnPlayPause?.setOnClickListener {
@@ -211,18 +210,6 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         speakOut(exerciseList!![currentExercisePosition].getName())
 
-
-//        val videoView = findViewById<VideoView>(R.id.ivImage)
-//        val videoUri = Uri.parse(
-//
-//            "android.resource://com.example/"+ R.raw.ex1
-//        )
-//
-//        videoView.setVideoURI(videoUri)
-//        videoView.setOnPreparedListener { mediaPlayer ->
-//            mediaPlayer.isLooping = true  // Loop the video
-//            videoView.start()
-//        }
         // Set Image and Exercise Title
         binding?.ivImage?.setImageResource(exerciseList!![currentExercisePosition].getImage())
         binding?.ExerciseTitle?.text = exerciseList!![currentExercisePosition].getName()
